@@ -1,0 +1,22 @@
+.toggleWrapper {
+  @apply mx-auto;
+  > input {
+    position: absolute;
+    left: -99em;
+  }
+  > .toggle {
+    @apply bg-gray-300 rounded-[84px] w-[70px] h-[30px] inline-block cursor-pointer transition-all;
+
+    > .toggle__handler {
+      @apply bg-yellow-300 inline-block w-[30px] h-[30px] rounded-full transition-all duration-300;
+    }
+  }
+}
+input:checked + .toggle {
+  @apply bg-neutral-800;
+}
+
+input:checked + .toggle .toggle__handler {
+  @apply bg-cyan-500;
+  transform: translate3d(40px, 0, 0);
+}

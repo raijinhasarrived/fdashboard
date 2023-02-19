@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white text-black dark:bg-black dark:text-white;
+}
+.default {
+  @apply bg-zinc-300 text-neutral-700 dark:bg-gray-900 p-3 rounded-lg dark:text-neutral-400;
+}
+
+.popup {
+  @apply fixed left-2/4 translate-x-[-50%] w-2/4 h-2/4 rounded-lg p-1;
+}
