@@ -10,20 +10,20 @@ interface ProfileProps {
 export const Profile: React.FC<ProfileProps> = ({ name, title, avatar, popup, popup2, popup3 }) => {
   return (
     <div className="flex flex-col items-center gap-3">
-      <img className="w-20 h-20 rounded-full" src={avatar} alt="avatar" />
-      <h4 className="font-semibold text-base text-black dark:text-white">{name}</h4>
-      <span className="font-medium text-sm">{title}</span>
+      <img className="h-20 w-20 rounded-full" src={avatar} alt="avatar" />
+      <h4 className="text-base font-semibold text-black dark:text-white">{name}</h4>
+      <span className="text-sm font-medium">{title}</span>
       <div className="flex gap-5">
         <button
           onClick={popup}
-          className="bg-purple-600 dark:bg-cyan-500 text-white p-4 rounded-lg hover:scale-110">
+          className="rounded-lg bg-[#45f3ff] p-4 text-white hover:scale-110 dark:bg-cyan-500">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6">
+            className="h-6 w-6">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -33,14 +33,14 @@ export const Profile: React.FC<ProfileProps> = ({ name, title, avatar, popup, po
         </button>
         <button
           onClick={popup2}
-          className="bg-purple-600 dark:bg-cyan-500 text-white p-4 rounded-lg hover:scale-110">
+          className="rounded-lg bg-[#45f3ff] p-4 text-white hover:scale-110 dark:bg-cyan-500">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6">
+            className="h-6 w-6">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -50,14 +50,14 @@ export const Profile: React.FC<ProfileProps> = ({ name, title, avatar, popup, po
         </button>
         <button
           onClick={popup3}
-          className="bg-purple-600 dark:bg-cyan-500 text-white p-4 rounded-lg hover:scale-110">
+          className="rounded-lg bg-[#45f3ff] p-4 text-white hover:scale-110 dark:bg-cyan-500">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6">
+            className="h-6 w-6">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"

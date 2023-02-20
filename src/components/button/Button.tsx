@@ -4,7 +4,7 @@ interface IButton {
 
 export const Button = ({ onClick }: IButton) => {
   return (
-    <button className="text-black dark:text-white hover:text-red-500 ml-auto" onClick={onClick}>
+    <button className="text-white hover:text-red-500 ml-auto" onClick={onClick}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

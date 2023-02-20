@@ -5,14 +5,12 @@ import { Links } from './Links';
 export const Sidebar = () => {
   const location = useLocation();
   return (
-    <div className="default min-w-[190px] flex flex-col  gap-24">
+    <div className="default flex min-w-[196px] flex-col  gap-24">
       <div className="flex flex-col gap-3">
         {Links.map((link, index) => (
           <NavLink
-            className={`flex gap-2 px-2 uppercase tracking-wider items-center hover:text-black dark:hover:text-white dark:border-cyan-500 text-lg ${
-              location.pathname === link.path
-                ? 'text-purple-700 dark:text-cyan-500 font-medium border-l'
-                : ''
+            className={`flex items-center gap-2 rounded-sm border-teal-400 px-2 text-lg  tracking-wider transition-colors duration-150 ease-in hover:text-black dark:border-cyan-500 dark:hover:text-white ${
+              location.pathname === link.path ? 'border-l-2 text-[#45f3ff]  dark:text-cyan-500' : ''
             }`}
             to={link.path}
             key={index}>
@@ -22,7 +20,7 @@ export const Sidebar = () => {
         ))}
       </div>
       <div className="border border-black dark:border-white"></div>
-      <div className="flex flex-col gap-2 uppercase tracking-wider text-base">
+      <div className="flex flex-col gap-2 text-base uppercase tracking-wider">
         <Toggle />
         <Link to="/settings" className="flex gap-2 hover:text-black dark:hover:text-white">
           <span>
@@ -32,7 +30,7 @@ export const Sidebar = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6">
+              className="h-6 w-6">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -47,7 +45,7 @@ export const Sidebar = () => {
           </span>
           <h4>settings</h4>
         </Link>
-        <button className="flex gap-2 uppercase tracking-wider text-base hover:text-black dark:hover:text-white">
+        <button className="flex gap-2 text-base uppercase tracking-wider hover:text-black dark:hover:text-white">
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +53,7 @@ export const Sidebar = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6">
+              className="h-6 w-6">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
