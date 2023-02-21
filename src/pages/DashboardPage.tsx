@@ -8,7 +8,7 @@ import { Search } from '../components/search/Search';
 
 export const DashboardPage = () => {
   return (
-    <div className="flex h-full w-full flex-col justify-between gap-4">
+    <div className="flex h-full w-full flex-col justify-between">
       <div className="flex w-full justify-between gap-3">
         <Search />
         <Notifications />

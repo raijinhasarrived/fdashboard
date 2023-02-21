@@ -5,7 +5,7 @@ import { Links } from './Links';
 export const Sidebar = () => {
   const location = useLocation();
   return (
-    <div className="default flex min-w-[196px] flex-col  gap-24">
+    <div className="default flex h-full min-w-[196px] flex-col  justify-between">
       <div className="flex flex-col gap-3">
         {Links.map((link, index) => (
           <NavLink

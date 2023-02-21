@@ -3,8 +3,8 @@ import { Routing } from '../routes/Routing';
 
 export const Layout = () => {
   return (
-    <div className="flex gap-5 w-full h-screen p-5">
-      <div className="flex flex-col justify-between">
+    <div className="flex h-screen w-full gap-5 p-5">
+      <div className="flex flex-col justify-between gap-5">
         <Sidebar />
         <Pro />
       </div>
