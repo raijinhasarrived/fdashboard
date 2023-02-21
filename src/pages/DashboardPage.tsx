@@ -14,7 +14,7 @@ export const DashboardPage = () => {
         <Notifications />
       </div>
       <AreaChartComponent />
-      <div className="flex gap-3">
+      <div className="flex h-[42%] gap-3">
         <PieChartComponent />
         <ComposedChartComponent />
       </div>

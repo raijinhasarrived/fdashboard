@@ -9,7 +9,7 @@ const data = [
 
 export const ComposedChartComponent = () => {
   return (
-    <div className="default flex  h-[275px] w-full">
+    <div className="default flex  h-full w-full">
       <ResponsiveContainer>
         <PieChart>
           <Pie dataKey="value" data={data} fill="#8884d8" label />

@@ -55,7 +55,7 @@ const data = [
 
 export const AreaChartComponent = () => {
   return (
-    <div className="default h-[300px]">
+    <div className="default h-[42%]">
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart
           width={500}
