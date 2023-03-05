@@ -6,6 +6,7 @@ import {
   CalendarPage,
   ProfilePage,
   SettingsPage,
+  NotFound,
 } from '../pages';
 
 export const Routing = () => {
@@ -17,6 +18,7 @@ export const Routing = () => {
       <Route path="/calendar" element={<CalendarPage />} />
       <Route path="/profile" element={<ProfilePage />} />
       <Route path="/settings" element={<SettingsPage />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };
