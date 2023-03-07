@@ -1,19 +1,19 @@
 import { Routes, Route } from 'react-router-dom';
 import {
   DashboardPage,
-  DocumentsPage,
   PaymentsPage,
   CalendarPage,
   ProfilePage,
   SettingsPage,
   NotFound,
+  ProductsPage,
 } from '../pages';
 
 export const Routing = () => {
   return (
     <Routes>
       <Route path="/" element={<DashboardPage />} />
-      <Route path="/docs" element={<DocumentsPage />} />
+      <Route path="/products" element={<ProductsPage />} />
       <Route path="/payments" element={<PaymentsPage />} />
       <Route path="/calendar" element={<CalendarPage />} />
       <Route path="/profile" element={<ProfilePage />} />

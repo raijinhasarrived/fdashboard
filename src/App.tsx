@@ -1,4 +1,5 @@
 import { useState, useEffect, createContext } from 'react';
+import { QueryClient, QueryClientProvider } from 'react-query';
 
 import { Layout } from './layout/Layout';
 
@@ -26,9 +27,13 @@ export const App = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
   };
 
+  const queryClient = new QueryClient();
+
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <Layout />
+      <QueryClientProvider client={queryClient}>
+        <Layout />
+      </QueryClientProvider>
     </ThemeContext.Provider>
   );
 };
